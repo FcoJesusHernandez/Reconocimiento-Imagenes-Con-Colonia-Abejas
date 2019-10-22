@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="clases\abeja.cs" />
+    <Compile Include="clases\abejaExploradora.cs" />
+    <Compile Include="clases\abejaObservadora.cs" />
+    <Compile Include="clases\abejaTrabajadora.cs" />
+    <Compile Include="clases\alimento.cs" />
+    <Compile Include="clases\colonia.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

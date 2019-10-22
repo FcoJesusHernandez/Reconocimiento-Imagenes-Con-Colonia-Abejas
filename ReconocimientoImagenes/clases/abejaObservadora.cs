@@ -4,9 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ReconocimientoImagenes
+namespace ReconocimientoImagenes.clases
 {
-    class abejaTrabajadora
+    class abejaObservadora
     {
+        public abejaObservadora()
+        {
+
+        }
     }
 }
