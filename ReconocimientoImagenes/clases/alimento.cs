@@ -8,9 +8,17 @@ namespace ReconocimientoImagenes.clases
 {
     class alimento
     {
-        public alimento()
-        {
+        Point ubicacion;
+        int contador;
 
+        public alimento(int x, int y)
+        {    
+            ubicacion = new Point(x,y);
+            contador = 0;
+        }
+
+        private void incrementarContador(){
+            contador++;
         }
     }
 }

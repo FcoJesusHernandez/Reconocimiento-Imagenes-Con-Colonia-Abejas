@@ -13,10 +13,11 @@ namespace ReconocimientoImagenes
     public partial class Form1 : Form
     {
         colonia coloniaAbejas;
+
         public Form1()
         {
             InitializeComponent();
-            coloniaAbejas = new colonia()
+            coloniaAbejas = new colonia();
         }
     }
 }
