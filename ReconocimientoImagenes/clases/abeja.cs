@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ReconocimientoImagenes
 {
-    class abeja
+    public class abeja
     {
         public abeja()
         {

@@ -7,17 +7,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Drawing;
 
 namespace ReconocimientoImagenes
 {
     public partial class Form1 : Form
     {
-        colonia coloniaAbejas;
+        colonia colonia_abejas;
+        int generaciones;
 
         public Form1()
         {
             InitializeComponent();
-            coloniaAbejas = new colonia();
+            colonia_abejas = new colonia();
         }
     }
 }

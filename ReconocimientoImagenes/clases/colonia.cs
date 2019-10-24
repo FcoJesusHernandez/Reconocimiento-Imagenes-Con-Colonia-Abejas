@@ -4,10 +4,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Drawing;
 
 namespace ReconocimientoImagenes
 {
-    class colonia
+    public class colonia
     {
         List<abeja> abejas;
         List<abejaExploradora> abejas_exploradoras;
