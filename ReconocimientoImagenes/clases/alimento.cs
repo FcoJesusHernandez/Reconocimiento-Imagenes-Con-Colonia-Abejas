@@ -12,11 +12,13 @@ namespace ReconocimientoImagenes.clases
         Point ubicacion;
         double aptitud; // que tanto es diferente
         int contador;
+        Color color_alimento; // variable a verificar si es igual o no
 
-        public alimento(int x, int y)
+        public alimento(int x, int y, Color color_)
         {    
             ubicacion = new Point(x,y);
             contador = 0;
+            color_alimento = color_;
         }
 
         public void incrementarContador(){
@@ -26,5 +28,13 @@ namespace ReconocimientoImagenes.clases
         public Point getUbicacion(){
             return ubicacion;
         } 
+
+        public Color getColores(){
+            return color_alimento;
+        }
+
+        public void setAptitud(Double aptitud){
+            this.aptitud = aptitud;
+        }
     }
 }

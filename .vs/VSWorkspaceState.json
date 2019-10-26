@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\ReconocimientoImagenes"
+    "\\ReconocimientoImagenes",
+    "\\ReconocimientoImagenes\\clases"
   ],
-  "SelectedNode": "\\ReconocimientoImagenes\\clases",
+  "SelectedNode": "\\ReconocimientoImagenes\\clases\\abejaTrabajadora.cs",
   "PreviewInSolutionExplorer": false
 }
