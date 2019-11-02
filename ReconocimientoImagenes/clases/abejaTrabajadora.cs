@@ -42,7 +42,7 @@ namespace ReconocimientoImagenes.clases
             return estoy_trabajando;
         }
 
-        public hacerExploradora(){
+        public void hacerExploradora(){
             estoy_trabajando=false;
         }
 
