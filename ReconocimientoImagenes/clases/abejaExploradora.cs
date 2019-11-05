@@ -17,11 +17,9 @@ namespace ReconocimientoImagenes.clases
             nueva_ubicacion=abejaOrigen.GetAlimento().getUbicacion();
         }
 
-        public void explorar(int limite_superior_x, int limite_inferior_x, int limite_superior_y, int limite_inferior_y){
-            // generar una nueva ubicacion
-            while(nueva_ubicacion==abejaOrigen.GetAlimento().getUbicacion()){
-                // randon para generar un nuevo alimento
-            }
+        public abejaTrabajadora getAbejaOrigen()
+        {
+            return abejaOrigen;
         }
     }
 }

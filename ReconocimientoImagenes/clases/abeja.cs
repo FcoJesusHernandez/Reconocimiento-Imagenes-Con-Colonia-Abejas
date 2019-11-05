@@ -8,9 +8,10 @@ namespace ReconocimientoImagenes
 {
     public class abeja
     {
-        public abeja()
+        int nombre;
+        public abeja(int nombre)
         {
-
+            this.nombre = nombre;
         }
     }
 }

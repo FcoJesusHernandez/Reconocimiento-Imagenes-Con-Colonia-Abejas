@@ -18,6 +18,7 @@ namespace ReconocimientoImagenes.clases
         {    
             ubicacion = new Point(x,y);
             contador = 0;
+            aptitud = -1;
             color_alimento = color_;
         }
 
@@ -35,6 +36,11 @@ namespace ReconocimientoImagenes.clases
 
         public void setAptitud(Double aptitud){
             this.aptitud = aptitud;
+        }
+
+        public double getAptitud()
+        {
+            return aptitud;
         }
     }
 }

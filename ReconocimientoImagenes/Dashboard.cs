@@ -17,11 +17,11 @@ namespace ReconocimientoImagenes
         bool Graphic;
         Bitmap Img_Or_Bmp;
         Bitmap Img_Draw_Bmp;
+
         public Dashboard()
         {
             InitializeComponent();
-            colonia_abejas = new colonia();
-            generaciones = 0;
+            generaciones = 300;
             Graphic = false;
         }
 
@@ -89,10 +89,9 @@ namespace ReconocimientoImagenes
                 Graphic_Comp.Hide();
             }
             //Grafico.Hide();
-
-
-
+            
         }
+
         public void Open_FileDialog(object sender, EventArgs e)
         {
             if (Graphic == true)
@@ -109,18 +108,18 @@ namespace ReconocimientoImagenes
                 if (sender == Img_Or_btn)
                 {
                     Img_Or_Bmp = new Bitmap(dlg.FileName);
-                    Img_Or_Pb.Image = Img_Or_Bmp;
+                    Img_Or_Pb.BackgroundImage = Img_Or_Bmp;
+                    Img_Or_Pb.Image = new Bitmap(Img_Or_Bmp.Width, Img_Or_Bmp.Height);
                 }
                 else
                 {
                     Img_Draw_Bmp = new Bitmap(dlg.FileName);
-                    Img_Draw_Pb.Image = Img_Draw_Bmp;
+                    Img_Draw_Pb.BackgroundImage = Img_Draw_Bmp;
+                    Img_Draw_Pb.Image = new Bitmap(Img_Or_Bmp.Width, Img_Or_Bmp.Height);
                 }
             }
             dlg.Dispose();
         }
-
-        
 
         private void Wrapper_Paint(object sender, PaintEventArgs e)
         {
@@ -138,6 +137,55 @@ namespace ReconocimientoImagenes
             this.Graphic_Comp.Series["Chart_Graphic"].Points.AddXY(5, 50);
             this.Graphic_Comp.Series["Chart_Graphic"].Points.AddXY(6, 40);
             this.Graphic_Comp.Series["Chart_Graphic"].Points.AddXY(7, 50);
+        }
+
+        private void Start_btn_Click(object sender, EventArgs e)
+        {
+            this.Graphic_Comp.Series["Chart_Graphic"].Points.Clear();
+            if (Img_Or_Bmp != null && Img_Draw_Bmp!=null) {
+                colonia_abejas = new colonia(100, 0.6f, 0.6f, Img_Or_Bmp, Img_Draw_Bmp);
+
+                for (int i = 0; i < generaciones; i++)
+                {
+                    colonia_abejas.etapaAbejasTrabajadoras();
+                    colonia_abejas.etapaAbejaObservadora();
+                    colonia_abejas.etapaAbejaExploradora();
+                    
+                    Img_Draw_Pb.Image = colonia_abejas.getBitmap();
+                    Img_Draw_Pb.Refresh();
+                    
+                    Img_Or_Pb.Image = colonia_abejas.getBitmap();
+                    Img_Or_Pb.Refresh();
+                    
+                    this.Graphic_Comp.Series["Chart_Graphic"].Points.AddXY(i, colonia_abejas.getEstadistica());
+                    Console.WriteLine(colonia_abejas.getEstadistica());
+                }
+                
+                /*if (backgroundWorker1.IsBusy != true)
+                {
+                    backgroundWorker1.RunWorkerAsync();
+                } */
+            }
+        }
+
+        private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
+        {
+            for (int i = 0; i < generaciones; i++)
+            {
+                colonia_abejas.etapaAbejasTrabajadoras();
+                colonia_abejas.etapaAbejaObservadora();
+                colonia_abejas.etapaAbejaExploradora();
+                
+                backgroundWorker1.ReportProgress((i*300)/generaciones);
+            }
+        }
+
+        private void backgroundWorker1_ProgressChanged(object sender, ProgressChangedEventArgs e)
+        {
+            Img_Draw_Pb.Image = colonia_abejas.getBitmap();
+            Img_Draw_Pb.Refresh();
+            Img_Or_Pb.Image = colonia_abejas.getBitmap();
+            Img_Or_Pb.Refresh();
         }
     }
 }

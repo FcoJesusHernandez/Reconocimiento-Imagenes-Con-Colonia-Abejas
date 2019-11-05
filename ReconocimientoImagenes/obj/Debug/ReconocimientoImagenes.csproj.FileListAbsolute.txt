@@ -27,3 +27,15 @@ C:\Users\veloc\Source\Repos\Reconocimiento-Imagenes-Con-Colonia-Abejas\Reconocim
 C:\Users\veloc\Source\Repos\Reconocimiento-Imagenes-Con-Colonia-Abejas\ReconocimientoImagenes\bin\Debug\ReconocimientoImagenes.pdb
 C:\Users\veloc\Source\Repos\Reconocimiento-Imagenes-Con-Colonia-Abejas\ReconocimientoImagenes\bin\Debug\Bunifu_UI_v1.5.3.dll
 C:\Users\veloc\Source\Repos\Reconocimiento-Imagenes-Con-Colonia-Abejas\ReconocimientoImagenes\obj\Debug\ReconocimientoImagenes.csproj.CopyComplete
+C:\Users\fjcre\source\repos\Reconocimiento-Imagenes-Con-Colonia-Abejas\ReconocimientoImagenes\obj\Debug\ReconocimientoImagenes.csprojAssemblyReference.cache
+C:\Users\fjcre\source\repos\Reconocimiento-Imagenes-Con-Colonia-Abejas\ReconocimientoImagenes\obj\Debug\ReconocimientoImagenes.Dashboard.resources
+C:\Users\fjcre\source\repos\Reconocimiento-Imagenes-Con-Colonia-Abejas\ReconocimientoImagenes\obj\Debug\ReconocimientoImagenes.Properties.Resources.resources
+C:\Users\fjcre\source\repos\Reconocimiento-Imagenes-Con-Colonia-Abejas\ReconocimientoImagenes\obj\Debug\ReconocimientoImagenes.csproj.GenerateResource.cache
+C:\Users\fjcre\source\repos\Reconocimiento-Imagenes-Con-Colonia-Abejas\ReconocimientoImagenes\obj\Debug\ReconocimientoImagenes.csproj.CoreCompileInputs.cache
+C:\Users\fjcre\source\repos\Reconocimiento-Imagenes-Con-Colonia-Abejas\ReconocimientoImagenes\obj\Debug\ReconocimientoImagenes.exe
+C:\Users\fjcre\source\repos\Reconocimiento-Imagenes-Con-Colonia-Abejas\ReconocimientoImagenes\obj\Debug\ReconocimientoImagenes.pdb
+C:\Users\fjcre\source\repos\Reconocimiento-Imagenes-Con-Colonia-Abejas\ReconocimientoImagenes\bin\Debug\ReconocimientoImagenes.exe.config
+C:\Users\fjcre\source\repos\Reconocimiento-Imagenes-Con-Colonia-Abejas\ReconocimientoImagenes\bin\Debug\ReconocimientoImagenes.exe
+C:\Users\fjcre\source\repos\Reconocimiento-Imagenes-Con-Colonia-Abejas\ReconocimientoImagenes\bin\Debug\ReconocimientoImagenes.pdb
+C:\Users\fjcre\source\repos\Reconocimiento-Imagenes-Con-Colonia-Abejas\ReconocimientoImagenes\bin\Debug\Bunifu_UI_v1.5.3.dll
+C:\Users\fjcre\source\repos\Reconocimiento-Imagenes-Con-Colonia-Abejas\ReconocimientoImagenes\obj\Debug\ReconocimientoImagenes.csproj.CopyComplete

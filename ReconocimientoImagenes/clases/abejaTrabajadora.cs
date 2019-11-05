@@ -13,17 +13,24 @@ namespace ReconocimientoImagenes.clases
         alimento fuente_alimento;
         int contador_sin_resultados; // iteraciones durante las cuales no se han obtenido resultados. 
         bool estoy_trabajando;
+        int numero_maximo_intentos;
 
-        public abejaTrabajadora(alimento fuente_alimento, abeja abeja)
+        public abejaTrabajadora(alimento fuente_alimento, abeja abeja, int intentos)
         {
             abejita = abeja;
             estoy_trabajando = false;
             this.fuente_alimento = fuente_alimento;
             contador_sin_resultados = 0;
+            numero_maximo_intentos = intentos;
         }
 
         public void incrementarContador(){
             contador_sin_resultados++;
+        }
+
+        public int getNumeroMaximoIntentos()
+        {
+            return numero_maximo_intentos;
         }
 
         public Point comunicarUbicacion(){
@@ -46,9 +53,10 @@ namespace ReconocimientoImagenes.clases
             estoy_trabajando=false;
         }
 
-        public void serAlimento(alimento nuevo_alimento){
+        public void hacerTrabajadora(alimento nuevo_alimento){
             estoy_trabajando=true;
             fuente_alimento=nuevo_alimento;
+            contador_sin_resultados = 0;
         }
     }
 }
